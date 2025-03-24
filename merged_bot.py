@@ -180,7 +180,7 @@ async def button_callback(client, callback_query):
         genre_tags = " ".join([f"#{g}" for g in anime["genres"]])
 
         if data == "hanime":
-            message_text = f"<b>💦 **{title}**\n╭──────────────────────\n├ 📺 Episode : {anime['episodes'] or 'N/A'}\n├ 💾 Quality : {quality}\n├ 🎭 Genres: {genres_text}\n├ 🔊 Audio track : Sub\n├ #Censored\n├ #Recommendation +++++++\n╰──────────────────────</b>"
+            message_text = f"<b>💦 {title}\n╭──────────────────────\n├ 📺 Episode : {anime['episodes'] or 'N/A'}\n├ 💾 Quality : {quality}\n├ 🎭 Genres: {genres_text}\n├ 🔊 Audio track : Sub\n├ #Censored\n├ #Recommendation +++++++\n╰──────────────────────</b>"
         else:  # Otaku Format Fixed
             message_text = f"""<b>💙 {title}</b>
 
