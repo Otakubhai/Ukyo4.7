@@ -180,7 +180,7 @@ async def button_callback(client, callback_query):
         genre_tags = " ".join([f"#{g}" for g in anime["genres"]])
 
         if data == "hanime":
-            message_text = f"**💦 {title}**\n╭──────────────────────\n├ 📺 Episode : {anime['episodes'] or 'N/A'}\n├ 💾 Quality : {quality}\n├ 🎭 Genres: {genres_text}\n├ 🔊 Audio track : Sub\n├ #Censored\n├ #Recommendation +++++++\n╰──────────────────────"
+            message_text = f"<b>💦 **{title}**\n╭──────────────────────\n├ 📺 Episode : {anime['episodes'] or 'N/A'}\n├ 💾 Quality : {quality}\n├ 🎭 Genres: {genres_text}\n├ 🔊 Audio track : Sub\n├ #Censored\n├ #Recommendation +++++++\n╰──────────────────────</b>"
         else:  # Otaku Format Fixed
             message_text = f"""<b>💙 {title}</b>
 
@@ -192,7 +192,7 @@ async def button_callback(client, callback_query):
 <b>✂️ Sizes:</b> 50MB, 120MB & 300MB
 <b>🔞 Rating:</b> PG-13
 
-📌 {genre_tags}"""
+<blockquote>📌 {genre_tags}</blockquote>"""
 
         await callback_query.message.reply_photo(photo=image_url, caption=message_text, parse_mode=ParseMode.HTML)
 
