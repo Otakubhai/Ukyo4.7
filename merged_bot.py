@@ -184,13 +184,13 @@ async def button_callback(client, callback_query):
         else:  # Otaku Format Fixed
             message_text = f"""<b>💙 {title}</b>
 
-<b>🎭 Genres:</b> {genres_text}
-<b>🔊 Audio:</b> Dual Audio
-<b>📡 Status:</b> Completed
-<b>🗓 Episodes:</b> {anime['episodes'] or 'N/A'}
-<b>💾 Quality:</b> {quality}
-<b>✂️ Sizes:</b> 50MB, 120MB & 300MB
-<b>🔞 Rating:</b> PG-13
+<b>🎭 Genres :</b> {genres_text}
+<b>🔊 Audio :</b> Dual Audio
+<b>📡 Status :</b> Completed
+<b>🗓 Episodes :</b> {anime['episodes'] or 'N/A'}
+<b>💾 Quality :</b> {quality}
+<b>✂️ Sizes :</b> 50MB, 120MB & 300MB
+<b>🔞 Rating :</b> PG-13
 
 <blockquote>📌 {genre_tags}</blockquote>"""
 
