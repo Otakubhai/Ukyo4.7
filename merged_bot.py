@@ -192,7 +192,7 @@ async def button_callback(client, callback_query):
 <b>✂️ Sizes :</b> 50MB, 120MB & 300MB
 <b>🔞 Rating :</b> PG-13
 
-<blockquote>📌 {genre_tags}</blockquote>"""
+<blockquote>📌 : {genre_tags}</blockquote>"""
 
         await callback_query.message.reply_photo(photo=image_url, caption=message_text, parse_mode=ParseMode.HTML)
 
